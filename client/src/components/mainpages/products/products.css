@@ -1,0 +1,106 @@
+.products{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(400px,1fr));
+    justify-content: center;
+    margin: 20px 0;
+}
+
+@media(max-width: 1200px){
+    .products{
+       
+        grid-template-columns: repeat(auto-fill , minmax(300px,1fr));
+       
+    }
+}
+
+@media(max-width: 780px){
+    .products{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        margin: 20px 0;
+    }
+}
+
+/* ------------Product Item------------- */
+@import url('../utils/productItem/productItem.css');
+
+.delete-all{
+    text-align: right;
+    margin: 20px;
+
+}
+
+.delete-all input{
+    height: 25px;
+    width: 25px;
+    transform: translateY(5px);
+    margin: 0 15px;
+}
+
+.delete-all span{
+    text-transform: uppercase;
+    color: #6667AB;
+    letter-spacing: 1.3px;
+}
+
+.delete-all button{
+    border: 1px solid crimson;
+    padding: 10px 25px;
+    color: crimson;
+    text-transform: uppercase;
+}
+
+
+/* --------------Filter Menu------------- */
+.filter_menu{
+    width: 100%;
+    min-height: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 15px 0;
+    padding: 0 20px;
+}
+
+
+
+
+.filter_menu section , input{
+    border: 1px solid #6667AB;
+    outline: none;
+    height: 30px;
+    padding: 0 5px;
+    border-radius: 2px;
+}
+
+.filter_menu input{
+    flex: 1;
+    margin: 0 10px;
+}
+
+
+.filter_menu .row select{
+    color: #6667AB;
+}
+
+.filter_menu .row option{
+   color: #6667AB;
+}
+/* --------------Load More------------- */
+.load_more{
+    text-align: center;
+}
+
+.load_more button{
+    padding: 10px 25px;
+    margin-bottom: 20px;
+    border: 2px solid #6667AB;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 5px;
+}
